@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: space-around;
     background-color: lightgrey;
-    border: 1px solid;
     height: 400px;
     width: 600px;
 }
@@ -17,4 +16,10 @@
 
 .description {
     text-align: center;
+}
+@media screen and (max-width: 1150px) {
+    .project {
+        height: 200px;
+        width: 65%;
+    }
 }

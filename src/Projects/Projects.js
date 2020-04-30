@@ -12,6 +12,7 @@ function Projects() {
                 <div className={styles.blocks}>
                     <Project/>
                     <Project/>
+                    <Project/>
                 </div>
             </div>
         </div>

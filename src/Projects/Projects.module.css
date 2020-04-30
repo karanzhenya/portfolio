@@ -1,15 +1,14 @@
 .projects {
   display: flex;
   height: 100vh;
-  background-color: mediumpurple;
+  background-color: #1f1f20;
   justify-content: center;
 }
 .container {
-  border: 1px solid;
   width: 80%;
   display: flex;
   flex-direction: column;
-justify-content: space-between;
+justify-content: space-around;
 }
 .blocks {
   display: flex;
@@ -18,4 +17,10 @@ justify-content: space-between;
 .title {
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 1150px) {
+  .blocks {
+    flex-direction: column;
+    align-items: center;
+  }
 }

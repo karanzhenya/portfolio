@@ -3,10 +3,10 @@
     height: 350px;
     width: 250px;
     background-color: palegreen;
+
 }
 
 .container {
-    border: 1px solid;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -22,4 +22,17 @@
 
 .description {
     text-align: center;
+}
+@media screen and (max-width: 1000px) {
+    .skill {
+        height: 100%;
+        width: 70%;
+    }
+}
+@media screen and (max-width: 869px) {
+    .skill {
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+    }
 }

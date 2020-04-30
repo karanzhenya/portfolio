@@ -2,11 +2,10 @@
     display: flex;
     justify-content: center;
     height: 100vh;
-    background-color: palegreen;
+    background-color: #252527;
 }
 
 .container {
-    border: 1px solid;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -15,5 +14,12 @@
 }
 
 .block {
-    display: flex;
+     display: flex;
+ }
+
+@media screen and (max-width: 1000px) {
+    .block {
+        flex-direction: column;
+        align-items: center;
+    }
 }
