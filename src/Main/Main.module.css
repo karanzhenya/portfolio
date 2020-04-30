@@ -3,6 +3,7 @@
     justify-content: center;
     height: 100vh;
     background-color: #1f1f20;
+    z-index: 1;
 }
 
 .container {
@@ -21,7 +22,7 @@
 
 .greeting span:nth-child(1) {
     font-size: 16px;
-    font-family: 'Alegreya Sans', sans-serif;;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
 .greeting span:nth-child(2),
@@ -50,9 +51,25 @@
 }
 
 .photo {
+    margin-top: 50px;
+    position: relative;
+    z-index: 0;
+}
+
+.image {
+    background-image: url("https://petsua.net/imgs/board/1/33911-1.jpg");
     width: 300px;
     height: 400px;
-    background-color: grey;
+}
+.photo .image:before {
+    content: "";
+    width: 300px;
+    height: 430px;
+    position: absolute;
+    left: 15px;
+    top: -15px;
+    border: 5px solid #fbbe18;
+    z-index: -1;
 }
 
 @media screen and (max-width: 600px) {
@@ -60,8 +77,8 @@
         flex-direction: column;
         width: 100%;
     }
-
     .photo {
+        margin-top: 0;
         width: 300px;
     }
 }

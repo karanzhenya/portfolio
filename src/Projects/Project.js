@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Project.module.css';
+import Button from "../Button/Button";
 
 function Project() {
     return (
@@ -7,7 +8,7 @@ function Project() {
                 <div className={styles.logo}>
                     <img src="" alt=""/>
                 </div>
-                <button>Look</button>
+                <Button value={"Смотреть"}/>
                 <div className={styles.title}>Название проекта
                 </div>
                 <div className={styles.description}>Краткое описание проекта

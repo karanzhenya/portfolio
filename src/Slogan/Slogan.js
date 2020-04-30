@@ -1,14 +1,14 @@
 import React from 'react';
 import styles from './Slogan.module.css';
+import Title from "../Title/Title";
+import Button from "../Button/Button"
 
 function Slogan() {
     return (
         <div className={styles.slogan}>
             <div className={styles.container}>
-              <div className={styles.call}>Click to hire me!</div>
-              <div className="button">
-                <button>Отправить</button>
-              </div>
+              <Title name={"Click to hire me!"}/>
+              <Button value={"Нанять"}/>
             </div>
         </div>
     );
