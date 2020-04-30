@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  height: 200px;
+  background-color: cadetblue;
+  justify-content: center;
+}
+.container {
+  border: 1px solid;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.social {
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+}
